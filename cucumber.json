@@ -1,0 +1,408 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-07-24T06:43:18.899Z",
+        "before": [
+          {
+            "result": {
+              "duration": 15920421625,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.setup()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Account Creation using data table",
+        "description": "",
+        "id": "facebook-account-creation;account-creation-using-data-table",
+        "after": [
+          {
+            "result": {
+              "duration": 242197208,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 18831892000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Facebook english web url is open",
+            "match": {
+              "location": "FBSignupDataTable.facebook_english_web_url_is_open()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 15304308041,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User clicks create new account button",
+            "match": {
+              "location": "FBSignupDataTable.user_clicks_create_new_account_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 12034461042,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User creates the new account",
+            "match": {
+              "location": "FBSignupDataTable.user_creates_the_new_account(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Field",
+                  "Value"
+                ]
+              },
+              {
+                "cells": [
+                  "FirstName",
+                  "Siva"
+                ]
+              },
+              {
+                "cells": [
+                  "Surname",
+                  "Prakash"
+                ]
+              },
+              {
+                "cells": [
+                  "mobile",
+                  "9000000001"
+                ]
+              },
+              {
+                "cells": [
+                  "Password",
+                  "siva123"
+                ]
+              },
+              {
+                "cells": [
+                  "dob",
+                  "2"
+                ]
+              },
+              {
+                "cells": [
+                  "dom",
+                  "Sep"
+                ]
+              },
+              {
+                "cells": [
+                  "doy",
+                  "1985"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1276163833,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Select gender",
+            "match": {
+              "location": "FBSignupDataTable.select_gender()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2349425833,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Click signup button",
+            "match": {
+              "location": "FBSignupDataTable.click_signup_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3692833,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Account creation must be successful",
+            "match": {
+              "location": "FBSignupDataTable.account_creation_must_be_successful()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DataTable"
+          }
+        ]
+      }
+    ],
+    "name": "Facebook Account Creation",
+    "description": "  Description: This feature will be create the facebook login",
+    "id": "facebook-account-creation",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/FbSignUpDataTable.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-07-24T06:44:25.365Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8780768917,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.setup()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "Account Creation",
+        "description": "",
+        "id": "facebook-account-creation;account-creation;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 420600792,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 17844272583,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Facebook english version is open",
+            "match": {
+              "location": "FBLoginSteps.facebook_english_version_is_open()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5553582958,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User click on create new account button",
+            "match": {
+              "location": "FBLoginSteps.user_click_on_create_new_account_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7137885208,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User provides firstname \"Krish\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Krish",
+                  "offset": 25
+                }
+              ],
+              "location": "FBLoginSteps.user_provides_firstname_something(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1282777166,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User provides surname \"Siva\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Siva",
+                  "offset": 23
+                }
+              ],
+              "location": "FBLoginSteps.user_provides_surname_something(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 637990542,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User provides mobilenumber \"9000000000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "9000000000",
+                  "offset": 28
+                }
+              ],
+              "location": "FBLoginSteps.user_provides_mobilenumber_something(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1189389333,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User provides password \"kri123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "kri123",
+                  "offset": 24
+                }
+              ],
+              "location": "FBLoginSteps.user_provides_password_something(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 722235834,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User provides dob \"7\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "7",
+                  "offset": 19
+                }
+              ],
+              "location": "FBLoginSteps.user_provides_dob_something(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 517083083,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User provides dom \"Sep\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sep",
+                  "offset": 19
+                }
+              ],
+              "location": "FBLoginSteps.user_provides_dom_something(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 430492500,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User provides doy \"1985\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1985",
+                  "offset": 19
+                }
+              ],
+              "location": "FBLoginSteps.user_provides_doy_something(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2408201916,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User selects the gender",
+            "match": {
+              "location": "FBLoginSteps.user_selects_the_gender()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3227959334,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "click on signup button",
+            "match": {
+              "location": "FBLoginSteps.click_on_signup_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10742458,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Account must be created for the user",
+            "match": {
+              "location": "FBLoginSteps.account_must_be_created_for_the_user()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Simple"
+          }
+        ]
+      }
+    ],
+    "name": "Facebook Account Creation",
+    "description": "  Description: This feature will be create the facebook login",
+    "id": "facebook-account-creation",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/FbSignup.feature",
+    "tags": []
+  }
+]
