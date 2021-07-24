@@ -7,9 +7,9 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions (
-		features = "src/features",
-		tags = "@NegativeLogin",
-		glue = "StepDefinition"
+		features = "src/test/java/features",
+		tags = {"@Simple,@DataTable"},
+		glue = {"StepDefinition"}
 		)
 
 public class TestRunner {
